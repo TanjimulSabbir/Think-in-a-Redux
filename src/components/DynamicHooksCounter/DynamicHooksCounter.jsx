@@ -4,7 +4,7 @@ import { Dydecrement, Dyincrement } from "../../Redux/DynamicCounter/actions";
 
 
 function DynamicHooksCounter() {
-    const count = useSelector((state) => state?.value);
+    const count = useSelector((state) => state?.DynamicCounter.value);
     const dispatch = useDispatch();
 
     const incrementHandler = (value) => {
